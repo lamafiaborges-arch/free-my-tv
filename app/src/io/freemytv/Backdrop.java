@@ -102,7 +102,7 @@ final class Backdrop {
             int[] night = darken(frost.clone(), 0.76f);
             int[] nightGlass = darken(glass, 0.56f);
             if (own) {
-                int[] sharp = reduce(out, GW, GH, 1, 1);
+                int[] sharp = reduce(out, W, H, 1, 1);
                 int[] lightBg = ramp(sharp.clone(), 0.82f, 0.45f, true), nightBg = ramp(sharp, 0.76f, 0.5f, false);
                 out.recycle();
                 return new Backdrop(null, frost, null, wide, light, lightGlass, night, nightGlass, lightBg, nightBg, GW, GH);
